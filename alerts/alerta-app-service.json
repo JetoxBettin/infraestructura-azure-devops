@@ -1,0 +1,32 @@
+{
+    "location": "global",
+    "properties": {
+      "description": "Alerta para tiempo de respuesta y códigos HTTP",
+      "severity": 2,
+      "enabled": true,
+      "scopes": [
+        "/subscriptions/{subscriptionId}/resourceGroups/rg-prueba-tecnica/providers/Microsoft.Web/sites/app-prueba-tecnica"
+      ],
+      "evaluationFrequency": "PT1M",
+      "windowSize": "PT5M",
+      "criteria": {
+        "allOf": [
+          {
+            "criterionType": "StaticThresholdCriterion",
+            "metricName": "HttpResponseTime",
+            "operator": "GreaterThan",
+            "threshold": 500,
+            "timeAggregation": "Average"
+          },
+          {
+            "criterionType": "StaticThresholdCriterion",
+            "metricName": "Http5xx",
+            "operator": "GreaterThan",
+            "threshold": 0,
+            "timeAggregation": "Total"
+          }
+        ]
+      }
+    }
+  }
+  
