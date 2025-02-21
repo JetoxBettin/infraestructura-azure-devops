@@ -1,6 +1,6 @@
 # infraestructura-azure-devops.
 
-Estimados miembros del equipo de evaluación,
+Estimado Ingeniero Gustavo Acero,
 
 Me complace presentar la Prueba Técnica correspondiente al proceso de selección para el rol de Ingeniero DevOps en su organización. En esta prueba, he abordado los requerimientos planteados con el objetivo de demostrar mis habilidades técnicas, mi capacidad para resolver problemas complejos y mi experiencia en la implementación de soluciones en la nube utilizando Microsoft Azure.
 
